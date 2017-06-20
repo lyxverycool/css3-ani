@@ -6,7 +6,7 @@
 		<title>果冻姐姐Forever</title>
 		<link rel="icon" href="images/love.ico" type="image/x-icon"/>
 		<link href="https://cdn.bootcss.com/jqueryui/1.12.1/jquery-ui.min.css" rel="stylesheet">
-		<style>
+		<style>			
 			html,
 			body,
 			.container {
@@ -20,10 +20,12 @@
 				position: relative;
 			}
 			.container1{
-				perspective: 2300px;
+				-webkit-perspective: 2300px;
+				        perspective: 2300px;
 			}
 			.container2{
-				perspective: 600px;
+				-webkit-perspective: 600px;
+				        perspective: 600px;
 			}
 			.love {
 				position: absolute;
@@ -33,7 +35,8 @@
 				color: pink;
 				font-weight:bolder;
 				font-size: 28px;
-				animation:love 35s linear infinite;
+				-webkit-animation:love 35s linear infinite;
+				        animation:love 35s linear infinite;
 				line-height:100px;		
 			}
 			.love img{
@@ -51,7 +54,8 @@
 				height: 200px;
 				margin-top: -100px;
 				margin-left: -100px;
-				transform-style: preserve-3d;
+				-webkit-transform-style: preserve-3d;
+				        transform-style: preserve-3d;
 			}
 			
 			img {
@@ -59,15 +63,18 @@
 				width: 200px;				
 				height: 200px;
 				-webkit-box-reflect: below 10px -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.7) 100%);
-				box-shadow: 0px 0px 20px #FFF;
+				-webkit-box-shadow: 0px 0px 20px #FFF;
+				        box-shadow: 0px 0px 20px #FFF;
 			}
 			.boxs1{
 				top: 65%;
-				animation: myRotate1 40s linear infinite;
+				-webkit-animation: myRotate1 40s linear infinite;
+				        animation: myRotate1 40s linear infinite;
 			}
 			.boxs2{
 				top: 50%;
-				animation: myRotate2 40s linear infinite;
+				-webkit-animation: myRotate2 40s linear infinite;
+				        animation: myRotate2 40s linear infinite;
 			}
 			 .box {
 				width: 200px;
@@ -77,143 +84,209 @@
 				border-radius: 8px;
 			}
 			.boxs1 .box1 {
-				transform: rotateY(0deg) translateZ(600px);
+				-webkit-transform: rotateY(0deg) translateZ(600px);
+				        transform: rotateY(0deg) translateZ(600px);
 			}
 			
 			.boxs1 .box2 {
-				transform: rotateY(24deg) translateZ(600px);
+				-webkit-transform: rotateY(24deg) translateZ(600px);
+				        transform: rotateY(24deg) translateZ(600px);
 			}
 			
 			.boxs1 .box3 {
-				transform: rotateY(48deg) translateZ(600px);
+				-webkit-transform: rotateY(48deg) translateZ(600px);
+				        transform: rotateY(48deg) translateZ(600px);
 			}
 			
 			.boxs1 .box4 {
-				transform: rotateY(72deg) translateZ(600px);
+				-webkit-transform: rotateY(72deg) translateZ(600px);
+				        transform: rotateY(72deg) translateZ(600px);
 			}
 			
 			.boxs1 .box5 {
-				transform: rotateY(96deg) translateZ(600px);
+				-webkit-transform: rotateY(96deg) translateZ(600px);
+				        transform: rotateY(96deg) translateZ(600px);
 			}
 			
 			.boxs1 .box6 {
-				transform: rotateY(120deg) translateZ(600px);
+				-webkit-transform: rotateY(120deg) translateZ(600px);
+				        transform: rotateY(120deg) translateZ(600px);
 			}
 			.boxs1 .box7 {
-				transform: rotateY(144deg) translateZ(600px);
+				-webkit-transform: rotateY(144deg) translateZ(600px);
+				        transform: rotateY(144deg) translateZ(600px);
 			}
 			
 			.boxs1 .box8 {
-				transform: rotateY(168deg) translateZ(600px);
+				-webkit-transform: rotateY(168deg) translateZ(600px);
+				        transform: rotateY(168deg) translateZ(600px);
 			}
 			
 			.boxs1 .box9 {
-				transform: rotateY(192deg) translateZ(600px);
+				-webkit-transform: rotateY(192deg) translateZ(600px);
+				        transform: rotateY(192deg) translateZ(600px);
 			}
 			
 			.boxs1 .box10 {
-				transform: rotateY(216deg) translateZ(600px);
+				-webkit-transform: rotateY(216deg) translateZ(600px);
+				        transform: rotateY(216deg) translateZ(600px);
 			}
 			.boxs1 .box11 {
-				transform: rotateY(240deg) translateZ(600px);
+				-webkit-transform: rotateY(240deg) translateZ(600px);
+				        transform: rotateY(240deg) translateZ(600px);
 			}
 			
 			.boxs1 .box12 {
-				transform: rotateY(264deg) translateZ(600px);
+				-webkit-transform: rotateY(264deg) translateZ(600px);
+				        transform: rotateY(264deg) translateZ(600px);
 			}
 			
 			.boxs1 .box13 {
-				transform: rotateY(288deg) translateZ(600px);
+				-webkit-transform: rotateY(288deg) translateZ(600px);
+				        transform: rotateY(288deg) translateZ(600px);
 			}
 			
 			.boxs1 .box14 {
-				transform: rotateY(312deg) translateZ(600px);
+				-webkit-transform: rotateY(312deg) translateZ(600px);
+				        transform: rotateY(312deg) translateZ(600px);
 			}
 			
 			.boxs1 .box15 {
-				transform: rotateY(336deg) translateZ(600px);
+				-webkit-transform: rotateY(336deg) translateZ(600px);
+				        transform: rotateY(336deg) translateZ(600px);
 			}
 			.boxs2 .box1 {
-				transform: rotateY(0deg) translateZ(600px);
+				-webkit-transform: rotateY(0deg) translateZ(600px);
+				        transform: rotateY(0deg) translateZ(600px);
 			}
 			
 			.boxs2 .box2 {
-				transform: rotateY(-24deg) translateZ(600px);
+				-webkit-transform: rotateY(-24deg) translateZ(600px);
+				        transform: rotateY(-24deg) translateZ(600px);
 			}
 			
 			.boxs2 .box3 {
-				transform: rotateY(-48deg) translateZ(600px);
+				-webkit-transform: rotateY(-48deg) translateZ(600px);
+				        transform: rotateY(-48deg) translateZ(600px);
 			}
 			
 			.boxs2 .box4 {
-				transform: rotateY(-72deg) translateZ(600px);
+				-webkit-transform: rotateY(-72deg) translateZ(600px);
+				        transform: rotateY(-72deg) translateZ(600px);
 			}
 			
 			.boxs2 .box5 {
-				transform: rotateY(-96deg) translateZ(600px);
+				-webkit-transform: rotateY(-96deg) translateZ(600px);
+				        transform: rotateY(-96deg) translateZ(600px);
 			}
 			
 			.boxs2 .box6 {
-				transform: rotateY(-120deg) translateZ(600px);
+				-webkit-transform: rotateY(-120deg) translateZ(600px);
+				        transform: rotateY(-120deg) translateZ(600px);
 			}
 			.boxs2 .box7 {
-				transform: rotateY(-144deg) translateZ(600px);
+				-webkit-transform: rotateY(-144deg) translateZ(600px);
+				        transform: rotateY(-144deg) translateZ(600px);
 			}
 			
 			.boxs2 .box8 {
-				transform: rotateY(-168deg) translateZ(600px);
+				-webkit-transform: rotateY(-168deg) translateZ(600px);
+				        transform: rotateY(-168deg) translateZ(600px);
 			}
 			
 			.boxs2 .box9 {
-				transform: rotateY(-192deg) translateZ(600px);
+				-webkit-transform: rotateY(-192deg) translateZ(600px);
+				        transform: rotateY(-192deg) translateZ(600px);
 			}
 			
 			.boxs2 .box10 {
-				transform: rotateY(-216deg) translateZ(600px);
+				-webkit-transform: rotateY(-216deg) translateZ(600px);
+				        transform: rotateY(-216deg) translateZ(600px);
 			}
 			.boxs2 .box11 {
-				transform: rotateY(-240deg) translateZ(600px);
+				-webkit-transform: rotateY(-240deg) translateZ(600px);
+				        transform: rotateY(-240deg) translateZ(600px);
 			}
 			
 			.boxs2 .box12 {
-				transform: rotateY(-264deg) translateZ(600px);
+				-webkit-transform: rotateY(-264deg) translateZ(600px);
+				        transform: rotateY(-264deg) translateZ(600px);
 			}
 			
 			.boxs2 .box13 {
-				transform: rotateY(-288deg) translateZ(600px);
+				-webkit-transform: rotateY(-288deg) translateZ(600px);
+				        transform: rotateY(-288deg) translateZ(600px);
 			}
 			
 			.boxs2 .box14 {
-				transform: rotateY(-312deg) translateZ(600px);
+				-webkit-transform: rotateY(-312deg) translateZ(600px);
+				        transform: rotateY(-312deg) translateZ(600px);
 			}
 			
 			.boxs2 .box15 {
-				transform: rotateY(-336deg) translateZ(600px);
+				-webkit-transform: rotateY(-336deg) translateZ(600px);
+				        transform: rotateY(-336deg) translateZ(600px);
+			}
+			@-webkit-keyframes love {
+				from {
+					-webkit-transform: translateX(2400px) ;
+					        transform: translateX(2400px) ;
+				}
+				to {
+					-webkit-transform: translateX(-300px);
+					        transform: translateX(-300px);
+				}
 			}
 			@keyframes love {
 				from {
-					transform: translateX(2400px) ;
+					-webkit-transform: translateX(2400px) ;
+					        transform: translateX(2400px) ;
 				}
 				to {
-					transform: translateX(-300px);
+					-webkit-transform: translateX(-300px);
+					        transform: translateX(-300px);
+				}
+			}			
+			@-webkit-keyframes myRotate1 {
+				from {
+					-webkit-transform: rotateX(16deg) rotateY(0deg);
+					        transform: rotateX(16deg) rotateY(0deg);
+				}
+				to {
+					-webkit-transform: rotateX(16deg) rotateY(360deg);
+					        transform: rotateX(16deg) rotateY(360deg);
 				}
 			}			
 			@keyframes myRotate1 {
 				from {
-					transform: rotateX(16deg) rotateY(0deg);
+					-webkit-transform: rotateX(16deg) rotateY(0deg);
+					        transform: rotateX(16deg) rotateY(0deg);
 				}
 				to {
-					transform: rotateX(16deg) rotateY(360deg);
+					-webkit-transform: rotateX(16deg) rotateY(360deg);
+					        transform: rotateX(16deg) rotateY(360deg);
+				}
+			}
+			@-webkit-keyframes myRotate2 {
+				from {
+					-webkit-transform: rotateX(20deg) rotateY(0deg);
+					        transform: rotateX(20deg) rotateY(0deg);
+				}
+				to {
+					-webkit-transform: rotateX(20deg) rotateY(360deg);
+					        transform: rotateX(20deg) rotateY(360deg);
 				}
 			}
 			@keyframes myRotate2 {
 				from {
-					transform: rotateX(20deg) rotateY(0deg);
+					-webkit-transform: rotateX(20deg) rotateY(0deg);
+					        transform: rotateX(20deg) rotateY(0deg);
 				}
 				to {
-					transform: rotateX(20deg) rotateY(360deg);
+					-webkit-transform: rotateX(20deg) rotateY(360deg);
+					        transform: rotateX(20deg) rotateY(360deg);
 				}
-			}
+			}	
 		</style>
 	</head>
 
@@ -251,16 +324,18 @@
 	<script>
 		$(function(){
 			$("#love1").click(function(){
-				$(".container").removeClass("container1").addClass('container2',2000, "easeInBounce");
+				$(".container").removeClass("container1").addClass('container2',2000, "easeInOutCubic");
 				$(".container .boxs").addClass('boxs2').removeClass("boxs1");
 				$("#love2").text("生日快乐，你永远是我家那一个永往直前阳光明媚的大王~");
-				$("#love4").attr('src','images/bgMusic2.mp3')
+				$("#love4").attr('src','images/bgMusic2.mp3');
+				$(".container").css("background-image","url(images/bg2.jpg)");
 			});
 			$("#love3").click(function(){
-				$(".container").removeClass("container2").addClass("container1",2000,"easeInOutBounce");
+				$(".container").removeClass("container2").addClass("container1",1600,"easeInOutBounce");
 				$(".container .boxs").addClass('boxs1').removeClass("boxs2");
 				$("#love2").text("Happy birthday, and you are my jelly sister forever~");
-				$("#love4").attr('src','images/bgMusic.mp3')
+				$("#love4").attr('src','images/bgMusic.mp3');
+				$(".container").css("background-image","url(images/bg.png)");
 			})
 		})
 	</script>
